@@ -14,4 +14,9 @@ public class WritingController {
         model.addAttribute("writingForm", new MemberForm());
         return "writings/createWritingForm";
     }
+
+    @GetMapping("/writings/view")
+    public String viewForm(Model model) {
+        return "writings/viewWritingForm";
+    }
 }
